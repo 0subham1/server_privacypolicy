@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
-console.log(__dirname, "dirr");
+
+const PORT = process.env.PORT || 8000;
 
 app.use(express.json());
 app.use(express.urlencoded());
@@ -11,4 +12,4 @@ app.get("/", (req, res) => {
   res.send("hello");
 });
 
-app.listen(8000);
+app.listen(PORT);
