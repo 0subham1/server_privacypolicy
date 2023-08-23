@@ -13,6 +13,10 @@ app.get("/privacy/greentest", (req, res) => {
   res.sendFile(__dirname + "/html/greentest.html");
 });
 
+app.get("/privacy/chatapp", (req, res) => {
+  res.sendFile(__dirname + "/html/chatapp.html");
+});
+
 app.get("/", (req, res) => {
   res.send("hello");
 });
