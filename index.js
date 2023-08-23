@@ -8,6 +8,11 @@ app.use(express.json());
 app.get("/privacy/social", (req, res) => {
     res.sendFile(__dirname + "/html/social.html");
 });
+
+app.get("/privacy/greentest", (req, res) => {
+  res.sendFile(__dirname + "/html/greentest.html");
+});
+
 app.get("/", (req, res) => {
   res.send("hello");
 });
