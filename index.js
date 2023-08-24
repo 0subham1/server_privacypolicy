@@ -16,6 +16,9 @@ app.get("/privacy/greentest", (req, res) => {
 app.get("/privacy/chatapp", (req, res) => {
   res.sendFile(__dirname + "/html/chatapp.html");
 });
+app.get("/privacy/ecomm", (req, res) => {
+  res.sendFile(__dirname + "/html/ecomm.html");
+});
 
 app.get("/", (req, res) => {
   res.send("hello");
